@@ -1,0 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS reset end */
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+a{
+  display: block;
+  text-decoration: none;
+}
+body{
+  font-family: 'Noto Sans TC', 'Roboto',  -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+}
+.container{
+  width: 1110px;
+  margin: 0 auto;
+}
+.bg-full{
+  background-color: #AA0601;
+}
+.tc-white{
+  color: #ffffff;
+}
+.t1{
+  font-size: 72px;
+  line-height: 96px;
+  font-weight: 700;
+}
+.t2{
+  font-size: 64px;
+  line-height: 90px;
+  font-weight: 700;
+}
+.t3{
+  font-size: 48px;
+  line-height: 68px;
+  font-weight: 700;
+}
+.t4{
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 700;
+  font-style: italic;
+}
+.t5{
+  font-size: 36px;
+  line-height: 48px;
+}
+.t6{
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.t7{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.t8{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.t9{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
