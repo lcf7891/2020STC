@@ -8,6 +8,6 @@ app
 app/*.*
 gulpfile.js
 .browserslistrc
-package-lock
-package
-README
+package-lock.json
+package.json
+README.md
