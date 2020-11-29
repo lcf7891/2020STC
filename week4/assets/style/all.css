@@ -67,7 +67,7 @@ body {
 @font-face {
   font-family: 'Fat';
   src: url(../fonts/NotoSansTC-Bold.otf);
-  unicode-range: U+4E00-9FFF; }
+  unicode-range: U+4E00-9FFF, U+3000-301E, U+FF01-FF1F; }
 
 @font-face {
   font-family: 'Fat';
@@ -77,12 +77,17 @@ body {
 @font-face {
   font-family: 'Regular';
   src: url(../fonts/NotoSansTC-Regular.otf);
-  unicode-range: U+4E00-9FFF; }
+  unicode-range: U+4E00-9FFF, U+3000-301E, U+FF01-FF1F; }
 
 @font-face {
   font-family: 'Regular';
   src: url(../fonts/Roboto-Regular.ttf);
   unicode-range: U+0041-007E; }
+
+@font-face {
+  font-family: 'Medium';
+  src: url(../fonts/NotoSansTC-Medium.otf);
+  unicode-range: U+4E00-9FFF, U+3000-301E, U+FF01-FF1F; }
 
 @font-face {
   font-family: 'Medium';
@@ -136,7 +141,7 @@ body {
 .text-content {
   color: #AA0601; }
 
-.text-title {
+.title-color {
   color: #650300; }
 
 .text-info {
@@ -148,36 +153,25 @@ body {
 .text-white {
   color: #ffffff; }
 
-.text-center {
-  text-align: center; }
-
 .full {
   background-color: #AA0601; }
-  @media (max-width: 992px) {
-    .full {
-      padding-left: 52px;
-      padding-right: 52px; } }
-  @media (max-width: 767px) {
-    .full {
-      padding-left: 39px;
-      padding-right: 39px; } }
-  @media (max-width: 576px) {
-    .full {
-      padding-left: 15px;
-      padding-right: 15px; } }
 
 .full-light {
   background-color: #AA06010D; }
+
+.full-limit {
+  padding-left: 88px;
+  padding-right: 88px; }
   @media (max-width: 992px) {
-    .full-light {
+    .full-limit {
       padding-left: 52px;
       padding-right: 52px; } }
   @media (max-width: 767px) {
-    .full-light {
+    .full-limit {
       padding-left: 39px;
       padding-right: 39px; } }
   @media (max-width: 576px) {
-    .full-light {
+    .full-limit {
       padding-left: 15px;
       padding-right: 15px; } }
 
@@ -205,6 +199,11 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
+.flex-jc-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 .flex-jc-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -218,6 +217,12 @@ body {
 .flex-wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
 
 .mb-4 {
   margin-bottom: 16px; }
@@ -268,8 +273,12 @@ body {
     width: 24px; }
   .width-ms-8 {
     width: 32px; }
+  .f3-ms {
+    font-family: 'Medium'; }
   .h6-ms {
     font-size: 20px; }
+  .h2-ms {
+    font-size: 48px; }
   .mb-ms-2 {
     margin-bottom: 8px; }
   .mb-ms-6 {
@@ -295,6 +304,8 @@ body {
             align-items: start; }
   .width-ss-5 {
     width: 20px; }
+  .h4-ss {
+    font-size: 32px; }
   .h7-ss {
     font-size: 16px; }
   .h8-ss {
@@ -322,7 +333,7 @@ body {
   width: 80px;
   height: 49px;
   display: block;
-  background: url(/assets/images/logo.png) center no-repeat;
+  background: url(../images/logo.png) center no-repeat;
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden; }
@@ -366,5 +377,16 @@ body {
     position: absolute;
     right: 0;
     bottom: 0; } }
+
+.banner {
+  height: 840px;
+  background: url(../images/banner.png) center no-repeat;
+  background-size: cover; }
+  @media (max-width: 576px) {
+    .banner {
+      height: 394px; } }
+
+.banner-inner {
+  height: 100%; }
 
 /*# sourceMappingURL=all.css.map */
