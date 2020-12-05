@@ -1,62 +1,191 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/all.css">
-  <title>眼鏡形象網站</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <title>眼鏡形象網頁</title>  
 </head>
 <body>
-  <nav class="topnav d-flex jc-between ai-center">
-    <h1><a href="#" title="眼鏡形象官網"><img src="./images/logo.png" alt="眼鏡形象官網"></a></h1>
-    <ul class="topnav__menu d-flex">
-      <li><a href="#">系列鏡框</a></li>
-      <li><a href="#">門市據點</a></li>
-      <li><a href="#">部落格</a></li>
-      <li><a href="#">常見問題</a></li>
-    </ul>
-  </nav>
-  <header class="banner">
-    <div class="banner-inner container d-flex ai-center jc-end">
-      <h2><span>Promise-Desert 2020 早春系列</span><br>看得清，才能看得遠</h2>
-    </div>
-  </header>
-  
-  <footer class="footernav">
-    <div class="container d-flex jc-between bottom-line">
-      <aside>
-        <ul class="footernav__menu d-flex effect-underline">
-          <li><a href="#">首頁</a></li>
-          <li><a href="#">系列鏡框</a></li>
-          <li><a href="#">門市據點</a></li>
-          <li><a href="#">部落格</a></li>
-          <li><a href="#">常見問題</a></li>
-        </ul>
-        <ul class="contact effect-underline mb-5">
-          <li class="d-flex"><img src="./images/icon-phone.svg" alt=""><a href="tel:0800-000-000">0800-000-000</a></li>
-          <li class="d-flex"><img src="./images/icon-mail.svg" alt=""><a href="mailto:glasses@business.com">glasses@business.com</a></li>
-        </ul>
-      </aside>
-      <ul class="community d-flex effect-zoom">
-        <li><a href="#"><img src="./images/icon-fb.svg" alt="facebook"></a></li>
-        <li class="community-list"><a href="#"><img src="./images/icon-ig.svg" alt="instagram"></a></li>
-        <li class="community-list"><a href="#"><img src="./images/icon-line.svg" alt="line"></a></li>
+
+  <nav class="full full-limit navbar">
+    <div class="d-flex flex-jc-between flex-ai-center flex-column-ss">
+      <h1 class="my-ss-3"><a class="text-hide" href="index.html" title="眼鏡形象網">眼鏡形象網</a></h1>
+      <ul class="d-flex flex-wrap navbar-menu">
+        <li><a class="hover-bg-color f2 h6" href="#" data-text="系列鏡框">系列鏡框</a></li>
+        <li><a class="hover-bg-color f2 h6" href="#" date-text="門市據點">門市據點</a></li>
+        <li><a class="hover-bg-color f2 h6" href="#" date-text="部落格">部落格</a></li>
+        <li><a class="hover-bg-color f2 h6" href="#" date-text="常見問題">常見問題</a></li>
       </ul>
     </div>
-    <div class="container d-flex jc-between copuright">
-      <div class=" d-flex ai-center">
-        <a href="#" title="眼鏡形象官網"><img src="./images/logo.png" alt="眼鏡形象官網"></a>
-        <p>Copyright © 2020 Glasses.All rights reserved.</p>
+  </nav>
+
+  
+
+<section class="banner full-limit">
+   <div class="container banner-inner d-flex flex-jc-end flex-ai-center text-right title-color">
+      <h2 class="f1 h1 h2-ms h4-ss"><span class="f2 f3-ms h3 h6-ms h7-ss">Promise-Desert 2020 早春系列</span><br>看得清，才能看得遠</h2>
+   </div>
+</section>
+
+<section class="full-light">
+   <div class="container pt-16 pt-ms-10 pb-10">
+      <h3 class="f1 h2 h4-ms h6-ss title-color text-center mb-15 mb-ms-8 mb-ss-5">用專業的心，做專業的事</h3>
+      <ul class="d-flex flex-jc-around flex-wrap">
+         <li class="specialty-card specialty-order">
+            <figure><img src="./assets/images/icon-dollar.svg" alt="dollar"></figure>
+            <h4 class="f1 h5 h6-ms">單一價格</h4>
+            <p class="f2">無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。</p>
+         </li>
+         <li class="specialty-card">
+            <figure><img src="./assets/images/icon-clock.svg" alt="clock"></figure>
+            <h4 class="f1 h5 h6-ms">20 分鐘即可取件</h4>
+            <p class="f2">為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交 件的時間縮減至最快 20 分鐘 即可完成。</p>
+         </li>
+         <li class="specialty-card">
+            <figure><img src="./assets/images/icon-heart.svg" alt="heart"></figure>
+            <h4 class="f1 h5 h6-ms">安心售後服務</h4>
+            <p class="f2">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+         </li>
+         <li class="specialty-card specialty-order">
+            <figure><img src="./assets/images/icon-glasses.svg" alt="glasses"></figure>
+            <h4 class="f1 h5 h6-ms">關於鏡片</h4>
+            <p class="f2">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+         </li>
+      </ul>
+   </div>
+</section>
+
+<section class="full-limit">
+   <div class="container pt-16 pt-ms-10 pt-ss-8 pb-12 pb-ms-8 pb-ss-6">
+      <h3 class="f1 h2 h4-ms h6-ss text-center title-color mb-15 mb-ms-8 mb-ss-5">經典系列鏡框</h3>
+      <ul class="product-card">
+         <li>
+            <img src="./assets/images/product-1.png" alt="optical">
+            <h4 class="f4 h2"><a class="text-content hover-underline diamond" href="#">OPTICAL</a></h4>
+         </li>
+         <li>
+            <img src="./assets/images/product-2.png" alt="sunglasses">
+            <h4 class="f4 h2"><a class="text-content hover-underline sun" href="#">SUNGLASSES</a></h4>
+         </li>
+         <li>
+            <img src="./assets/images/product-3.png" alt="functional">
+            <h4 class="f4 h2"><a class="text-content hover-underline thunder" href="#">FUNCTIONAL</a></h4>
+         </li>
+      </ul>
+   </div>
+</section>
+
+<section class="full-limit crossover">
+   <div class="container pt-16 py-ms-10 pb-20 ">
+      <h2 class="h2 h4-ms h6-ss f1 text-white text-center mb-15 mb-ms-8">聯名設計鏡框</h2>
+      <ul class="d-flex">
+         <li>
+            <img src="./assets/images/product-8.png" alt="product8"><h4 class="f1 text-content">Double A+</h4></li>
+         <li>
+            <img src="./assets/images/product-9.png" alt="product9"><h4 class="f1 text-content">YOUTH</h4></li>
+      </ul>
+   </div>
+</section>
+
+<section class="full-limit">
+   <div class="container py-16 py-ms-10 pt-ss-8 pb-ss-4">
+      <h2 class="f1 h2 h4-ms h6-ss title-color text-center mb-15 mb-ms-8 mb-ss-5">顧客推薦</h2>
+      <ul class="recom">
+         <li class="recom-items mb-ms-7">
+            <img src="./assets/images/rec-1.png" alt="rec1">
+            <div class="recom-content">
+               <h5 class="f3 h8 mb-2">Jessy</h5>
+               <p class="f2 h7 mb-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+               <span class="f2 h8 text-span">Last updated 3 mins ago</span>
+            </div>
+         </li>
+         <li class="recom-items mb-ms-7">
+            <img src="./assets/images/rec-2.png" alt="rec2">
+            <div class="recom-content">
+               <h5 class="f3 h8 mb-2">Karen</h5>
+               <p class="f2 h7 mb-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+               <span class="f2 h8 text-span">Last updated 3 mins ago</span>
+            </div>
+         </li>
+         <li class="recom-items">
+            <img src="./assets/images/rec-3.png" alt="rec3">
+            <div class="recom-content">
+               <h5 class="f3 h8 mb-2">Chelsea</h5>
+               <p class="f2 h7 mb-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+               <span class="f2 h8 text-span">Last updated 3 mins ago</span>
+            </div>
+         </li>
+         <li class="recom-items">
+            <img src="./assets/images/rec-4.png" alt="rec4">
+            <div class="recom-content">
+               <h5 class="f3 h8 mb-2">Jane</h5>
+               <p class="f2 h7 mb-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+               <span class="f2 h8 text-span">Last updated 3 mins ago</span>
+            </div>
+         </li>
+      </ul>
+   </div>
+</section>
+
+<section class="full-light full-limit">
+   <div class="container-from pt-16 pb-20 py-ms-10">
+      <h2 class="f1 h2 h4-ms h6-ss text-center mb-6 mb-ms-4 mb-ss-5">聯絡我們</h2>
+      <p class="f2 h6 h7-ms mb-5 mb-ms-4 mb-ss-2">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+      <form action="index.html">
+         <div class="form-group">
+            <label for="name">姓名</label><br>
+            <input class="f2 p-4" name="name" type="text" placeholder="陳小明"></div>
+         <div class="form-group">
+            <label for="phone">聯絡電話</label><br>
+            <input class="f2 p-4" name="phone" type="tel" placeholder="0912-345-678"></div>
+         <div class="form-group">
+            <label for="mail">電子郵件</label><br>
+            <input class="f2 p-4" name="mail" type="email" placeholder="example@email.com"></div>
+         <div class="form-group">
+            <label for="feedback">意見反應</label><br>
+            <textarea class="f2 p-4" name="feedback" id="" cols="30" rows="10" placeholder="請輸入您的意見"></textarea></div>
+         <div class="d-flex flex-ai-center mb-10 mb-ms-5">
+            <input type="checkbox">
+            <span>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span></div>
+            <input class="f1 btn full text-white" type="button" value="確認送出">
+      </form>
+   </div>
+</section>
+
+  <footer class="full full-limit footer-navbar f2">
+    <div class="container d-flex flex-jc-between line-bottom mb-6">
+      <div>
+        <ul class="d-flex mb-8 mb-ms-6 display-none-ss">
+          <li><a class="mr-12 mr-ms-10 hover-underline" href="index.html">首頁</a></li>
+          <li><a class="mr-12 mr-ms-10 hover-underline" href="#">系列鏡框</a></li>
+          <li><a class="mr-12 mr-ms-10 hover-underline" href="#">門市據點</a></li>
+          <li><a class="mr-12 mr-ms-10 hover-underline" href="#">部落格</a></li>
+          <li><a class="hover-underline" href="#">常見問題</a></li>
+        </ul>
+        <ul class="h3 h6-ms h7-ss mb-5">
+          <li class="d-flex mb-4 mb-ms-2"><img class="width-ms-6 width-ss-5" src="./assets/images/icon-phone.svg" alt="phone"><a class="hover-underline ml-5 ml-ss-1" href="tel:0800-000-000">0800-000-000</a></li>
+          <li class="d-flex"><img class="width-ms-8 width-ss-5"src="./assets/images/icon-mail.svg" alt="mail"><a class="hover-underline ml-3 ml-ss-1" href="mailto:glasses@business.com">glasses@business.com</a></li>
+        </ul>
       </div>
-      <ul class="d-flex ai-center copuright__list effect-underline">
-        <li><a href="">隱私權政策</a></li>
-        <li><a href="">服務條款</a></li>
+      <ul class="d-flex">
+        <li><a href="#"><img class="hover-transform width-ms-6" src="./assets/images/icon-fb.svg" alt="facebook"></a></li>
+        <li class="ml-8 ml-ms-6"><a href="#"><img class="hover-transform width-ms-6" src="./assets/images/icon-ig.svg" alt="instagram"></a></li>
+        <li class="ml-8 ml-ms-6"><a href="#"><img class="hover-transform width-ms-6" src="./assets/images/icon-line.svg" alt="line"></a></li>
+      </ul>
+    </div>
+    <div class="container d-flex flex-jc-between flex-column-ss copyright-ss">
+      <div class="d-flex flex-ai-center">
+        <a class="footer-logo" href="index.html" title="眼鏡形象網"><img src="assets/images/logo.png" alt="眼鏡形象網"></a>
+        <p class="text-white ml-9 ml-ms-0 mb-ss-2 h8-ss">Copyright © 2020 Glasses.All rights reserved.</p>
+      </div>
+      <ul class="d-flex flex-ai-center h8 flex-column-ss flex-ai-start-ss">
+        <li><a class="hover-underline mb-ss-2" href="#">隱私權政策</a></li>
+        <li><a class="hover-underline ml-15 ml-ms-6 ml-ss-0" href="#">服務條款</a></li>
       </ul>
     </div>
   </footer>
+  
 </body>
 </html>
