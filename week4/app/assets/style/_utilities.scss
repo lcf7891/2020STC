@@ -1,0 +1,57 @@
+.d-inline-block{
+   display: inline-block;
+}
+
+//flex-box
+.d-flex {
+   display: flex;
+}
+.justify-content-between {
+   justify-content: space-between;
+}
+.align-items-center {
+   align-items: center;
+}
+.flex-wrap {
+   flex-wrap: wrap;
+}
+
+//margin
+//margin-bottom
+.mb-5 {
+   @include spacing(mb, 5);
+}
+.mb-6 {
+   @include spacing(mb, 6);
+}
+
+//margin-left
+.ml-3 {
+   @include spacing(ml, 3);
+}
+.ml-6 {
+   @include spacing(ml, 6);
+}
+.ml-8 {
+   @include spacing(ml, 8);
+}
+.ml-10 {
+   @include spacing(ml, 10);
+}
+.ml-12 {
+   @include spacing(ml, 12);
+}
+.ml-15 {
+   @include spacing(ml, 15);
+}
+
+//padding
+//padding-top
+.pt-9 {
+   @include spacing(pt, 9);
+}
+
+//padding-bottom
+.pb-7 {
+   @include spacing(pb, 7);
+}
