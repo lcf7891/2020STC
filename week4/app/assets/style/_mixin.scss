@@ -1,0 +1,128 @@
+// large-screen-ls
+@mixin ls {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+// medium-screen-ms
+@mixin ms {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+// small-screen-ss
+@mixin ss {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+//base-variable
+$space-base: 4px;
+
+//spacing(margin= m, padding= p)
+//position(top= t, bottom= b, left= l, right= r)
+@mixin spacing($n, $i) {
+  @if $n == m {
+      margin: $i * $space-base;
+  } @else if $n == mt {
+      margin-top: $i * $space-base;
+  } @else if $n == mb {
+      margin-bottom: $i * $space-base;
+  } @else if $n == ml {
+      margin-left: $i * $space-base;
+  } @else if $n == mr {
+      margin-right: $i * $space-base;
+  } @else if $n == my {
+      margin-top: $i * $space-base;
+      margin-bottom: $i * $space-base;
+  } @else if $n == mx {
+      margin-left: $i * $space-base;
+      margin-right: $i * $space-base;
+  } @else if $n == p {
+      padding: $i * $space-base;
+  } @else if $n == pt {
+      padding-top: $i * $space-base;
+  } @else if $n == pb {
+      padding-bottom: $i * $space-base;
+  } @else if $n == pl {
+      padding-left: $i * $space-base;
+  } @else if $n == pr {
+      padding-right: $i * $space-base;
+  } @else if $n == py {
+      padding-top: $i * $space-base;
+      padding-bottom: $i * $space-base;
+  } @else if $n == px {
+      padding-left: $i * $space-base;
+      padding-right: $i * $space-base;
+  }
+}
+
+//h1 text-hide
+@mixin hide {
+    display: block;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+//width-calc
+@mixin width-calc($unit, $space) {
+    width: calc(100%/#{$unit} - #{$space}px);
+}
+
+//hover
+@mixin curtain {
+    transform: translateZ(0);
+    position: relative;
+    transition-duration: 1s;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $title;
+        transform: scaleY(0);
+        transform-origin: 50% 0;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    &:hover {
+        color: $info;
+        &::before {
+            transform: scaleY(1);
+        }
+    }
+}
+
+@mixin jump {
+    transform: translateZ(0);
+    box-shadow: 0 0 1px #dee2e6;
+    position: relative;
+    transition-duration: 0.5s;
+    &::before {
+        pointer-events: none;
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 5%;
+        height: 10px; /*影子高度*/
+        width: 90%; /*影子寬度*/
+        opacity: 0; /*透明度=0，隱藏*/
+        background: radial-gradient(ellipse at center, #AA0601 5%, #AA06010D 80%);/*區塊的影子*/
+                    /*函式創建背景圖( 橢圓形 在 中間, 中心主色 顏色濃度, 擴散(外圍)顏色 顏色濃度)  */
+        transition-duration: 0.5s;
+        transition-property: transform, opacity;
+    }
+    &:hover {
+        background-color: $primary-light;
+        transform: translateY(-10px); /*將區塊往上升*/
+        &::before {
+            opacity: 1; /*透明度=1，顯示*/
+            transform: translateY(10px);
+        }
+    }
+}

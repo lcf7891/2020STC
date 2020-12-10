@@ -1,0 +1,61 @@
+.banner {
+   height: 840px;
+   background: url(../images/banner.png) center no-repeat;
+}
+.banner__content {
+   height: 100%;
+   text-align: right;
+}
+
+.specialty-card {
+   width: 22%;
+
+}
+.specialty-img {
+   height: 100px;
+   position: relative;
+   img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+   }
+}
+
+.product__img {
+   width: 635px;
+   height: 320px;
+}
+
+.crossover {
+   background: url(../images/bg.png) center no-repeat;
+}
+.crossover-card {
+   font-size: 72px;
+}
+.crossover-card__item {
+   width: 49%;
+   position: relative;
+   &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.3);;
+   }
+}
+.crossover-card__content {
+   white-space: nowrap;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.cite-width {
+   @include width-calc(4, 15);
+}

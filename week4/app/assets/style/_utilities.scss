@@ -1,0 +1,100 @@
+
+//flex-box
+.d-flex {
+   display: flex;
+}
+.flex-direction-reverse {
+   flex-direction: row-reverse;
+}
+.flex-direction-column {
+   flex-direction: column;
+}
+.justify-content-center {
+   justify-content: center;
+}
+.justify-content-between {
+   justify-content: space-between;
+}
+.justify-content-around {
+   justify-content: space-around;
+}
+.align-items-center {
+   align-items: center;
+}
+.flex-wrap {
+   flex-wrap: wrap;
+}
+
+//margin
+//margin-bottom
+.mb-1 {
+   @include spacing(mb, 1);
+}
+.mb-2 {
+   @include spacing(mb, 2);
+}
+.mb-5 {
+   @include spacing(mb, 5);
+}
+.mb-6 {
+   @include spacing(mb, 6);
+}
+.mb-8 {
+   @include spacing(mb, 8);
+}
+.mb-10 {
+   @include spacing(mb, 10);
+}
+.mb-15 {
+   @include spacing(mb, 15);
+}
+
+//margin-left
+.ml-2{
+   @include spacing(ml, 2);
+}
+.ml-3 {
+   @include spacing(ml, 3);
+}
+.ml-6 {
+   @include spacing(ml, 6);
+}
+.ml-7{
+   @include spacing(ml, 7);
+}
+.ml-8 {
+   @include spacing(ml, 8);
+}
+.ml-10 {
+   @include spacing(ml, 10);
+}
+.ml-12 {
+   @include spacing(ml, 12);
+}
+.ml-15 {
+   @include spacing(ml, 15);
+}
+
+//padding
+.padding-4 {
+   @include spacing(p, 4);
+}
+//padding-top
+.pt-9 {
+   @include spacing(pt, 9);
+}
+.pt-16 {
+   @include spacing(pt, 16);
+}
+
+//padding-bottom
+.pb-7 {
+   @include spacing(pb, 7);
+}
+.pb-16 {
+   @include spacing(pb, 16);
+}
+.pb-20 {
+   @include spacing(pb, 20);
+}
+
