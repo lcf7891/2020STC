@@ -307,11 +307,7 @@ h1, h2, h3, h4, h5, h6 {
        -o-transition-duration: 1s;
           transition-duration: 1s; }
   .btn--conversion::before {
-<<<<<<< HEAD
     content: '';
-=======
-    content: "";
->>>>>>> week4
     position: absolute;
     z-index: -1;
     top: 0;
@@ -380,10 +376,7 @@ h1, h2, h3, h4, h5, h6 {
     transition-property: transform, opacity;
     transition-property: transform, opacity, -webkit-transform; }
   .cite--jump:hover {
-<<<<<<< HEAD
     background-color: #AA06010D;
-=======
->>>>>>> week4
     -webkit-transform: translateY(-10px);
         -ms-transform: translateY(-10px);
             transform: translateY(-10px);
@@ -437,11 +430,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 72px; }
 
 .crossover-card__item {
-<<<<<<< HEAD
   width: 49%;
-=======
-  width: 48%;
->>>>>>> week4
   position: relative; }
   .crossover-card__item::before {
     content: '';
