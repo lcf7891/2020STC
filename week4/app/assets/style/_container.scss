@@ -1,0 +1,30 @@
+.container {
+   max-width: 1110px;
+   margin: 0 auto;
+   @include ls {
+         max-width: 960px;
+   }
+   @include ms {
+         max-width: 720px;
+   }
+   @include ss {
+         max-width: 540px; 
+   }
+}
+
+.full--limit {
+   padding-left: 88px;
+   padding-right: 88px;
+   @include ls {
+      padding-left: 52px;
+      padding-right: 52px;
+   }
+   @include ms {
+      padding-left: 40px;
+      padding-right: 40px;
+   }
+   @include ss {
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+}

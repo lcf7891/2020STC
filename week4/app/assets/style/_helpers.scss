@@ -1,0 +1,51 @@
+.full__bg--primary {
+   background-color: $primary;
+}
+.full__bg--primary-light {
+   background-color: $primary-light;
+}
+.line-bottom--white {
+   border-bottom: 1px solid $white;
+}
+.border {
+   border: 1px solid $border;
+}
+
+//text
+.text-center {
+   text-align: center;
+}
+.text-justify {
+   text-align: justify;
+}
+.text-white {
+   color: $white;
+}
+.text-title-color {
+   color: $title;
+}
+.text-primary {
+   color: $primary;
+}
+.text-span {
+   color: $text-color;
+}
+.text-info {
+   color: $info;
+}
+
+//btn
+.btn--conversion {
+   padding: 40px 32px;
+   @include curtain;
+}
+.btn--underline:hover {
+   text-decoration: underline;
+}
+.btn--zoom:hover {
+   transform: scale(1.3, 1.3);
+}
+
+.cite--jump {
+   @include jump;
+}
