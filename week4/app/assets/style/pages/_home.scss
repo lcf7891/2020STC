@@ -9,7 +9,9 @@
 
 .specialty-card {
    width: 22%;
-
+   @include ls {
+      width: 35%;
+   }
 }
 .specialty-img {
    height: 100px;
@@ -23,10 +25,33 @@
       margin: auto;
    }
 }
+.specialty-order {
+   order: 3;
+}
 
 .product__img {
    width: 635px;
    height: 320px;
+   @include ls {
+      width: 390px;
+      height: 168px;
+   }
+}
+.product__icon {
+   width: 48px;
+   height: 48px;
+   @include ls {
+      width: 32px;
+      height: 32px;
+   }
+   @include ms {
+      margin-left: 30px;
+   }
+}
+.product__text {
+   @include ms {
+      font-size: 28px;
+   }
 }
 
 .crossover {
@@ -34,6 +59,12 @@
 }
 .crossover-card {
    font-size: 72px;
+   @include ls {
+      font-size: 48px;
+   }
+   @include ms {
+      font-size: 32px;
+   }
 }
 .crossover-card__item {
    width: 49%;
@@ -58,4 +89,33 @@
 
 .cite-width {
    @include width-calc(4, 15);
+   @include ms {
+      @include width-calc(2, 15);
+   }
+}
+
+.contact- {
+   &container{
+      width: 730px;
+      margin: 0 auto;
+      @include ms {
+         width: 450px;
+      }
+   }
+   &input {
+      width: 100%;
+      background-color: transparent;
+      padding: 14px 16px;
+      border: 1px solid #000000;
+      @include area-resize;
+   }
+   &btn {
+      width: 350px;
+      display: block;
+      background-color: $primary;
+      margin: auto;
+      &:hover {
+         background-color: $dark;
+      }
+   }
 }

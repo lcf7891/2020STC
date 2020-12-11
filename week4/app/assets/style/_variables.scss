@@ -68,15 +68,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h2 {
-  font-size: 48px; 
+  font-size: 48px;
+  &-ms {
+    @include ms {
+      font-size: 48px;
+    }
+  } 
 }
 
 .h3 {
-  font-size: 36px; 
+  font-size: 36px;
+  &-ls {
+    @include ls {
+      font-size: 36px;
+    }
+  } 
 }
 
 .h4 {
-  font-size: 32px; 
+  font-size: 32px;
+  &-ms {
+    @include ms {
+      font-size: 32px;
+    }
+  } 
 }
 
 .h5 {
@@ -85,17 +100,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .h6 {
   font-size: 20px; 
+  &-ms {
+    @include ms {
+      font-size: 20px;
+    }
+  }
 }
 
 .h7 {
   font-size: 14px; 
+  &-ms {
+    @include ms {
+      font-size: 14px;
+    }
+  }
+}
+
+@include ms {
+  .h8-ms {
+    font-size: 16px;
+  }
 }
 
 //color
 $white: #ffffff;
 $primary: #AA0601;
 $primary-light: #AA06010D;
-$title: #650300;
+$dark: #650300;
 $info: #707070;
 $border: #DEE2E6;
 $text-color: #212529;

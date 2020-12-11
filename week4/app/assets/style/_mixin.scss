@@ -71,6 +71,12 @@ $space-base: 4px;
     width: calc(100%/#{$unit} - #{$space}px);
 }
 
+//area-resize
+@mixin area-resize {
+    resize: none;
+}
+
+
 //hover
 @mixin curtain {
     transform: translateZ(0);
@@ -84,7 +90,7 @@ $space-base: 4px;
         left: 0;
         right: 0;
         bottom: 0;
-        background: $title;
+        background: $dark;
         transform: scaleY(0);
         transform-origin: 50% 0;
         transition-duration: 0.5s;

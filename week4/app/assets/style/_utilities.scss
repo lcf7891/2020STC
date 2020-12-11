@@ -1,3 +1,11 @@
+.d-block {
+   display: block;
+}
+.d-none-ms {
+   @include ms {
+      display: none;
+   }
+}
 
 //flex-box
 .d-flex {
@@ -25,6 +33,12 @@
    flex-wrap: wrap;
 }
 
+@include ms {
+   .flex-direction-ms {
+      flex-direction: row;
+   }
+}
+
 //margin
 //margin-bottom
 .mb-1 {
@@ -32,6 +46,9 @@
 }
 .mb-2 {
    @include spacing(mb, 2);
+}
+.mb-4 {
+   @include spacing(mb, 4);
 }
 .mb-5 {
    @include spacing(mb, 5);
@@ -87,6 +104,8 @@
    @include spacing(pt, 16);
 }
 
+
+
 //padding-bottom
 .pb-7 {
    @include spacing(pb, 7);
@@ -96,5 +115,60 @@
 }
 .pb-20 {
    @include spacing(pb, 20);
+}
+
+//padding-top&bottom
+.py-4 {
+   @include spacing(py, 4);
+}
+
+//RWD-space
+@include ls {
+   .mb-2-ls {
+      @include spacing(mb, 2);
+   }
+   .mb-10-ls {
+      @include spacing(mb, 10);
+   }
+
+   .pt-10-ls {
+      @include spacing(pt, 10);
+   }
+
+   .pb-10-ls {
+      @include spacing(pb, 10);
+   }
+}
+
+@include ms {
+   .mb-2-ms {
+      @include spacing(mb, 2);
+   }
+   .mb-4-ms {
+      @include spacing(mb, 4);
+   }
+   .mb-7-ms {
+      @include spacing(mb, 7);
+   }
+   .mb-8-ms {
+      @include spacing(mb, 8);
+   }
+
+   .ml-0-ms {
+      @include spacing(ml, 0);
+   }
+   .ml-3-ms {
+      @include spacing(ml, 3);
+   }
+   .ml-6-ms {
+      @include spacing(ml, 6);
+   }
+   .ml-10-ms {
+      @include spacing(ml, 10);
+   }
+}
+
+@include ss {
+
 }
 

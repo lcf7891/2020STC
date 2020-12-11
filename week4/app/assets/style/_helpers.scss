@@ -1,7 +1,7 @@
-.full__bg--primary {
+.full--primary {
    background-color: $primary;
 }
-.full__bg--primary-light {
+.full--primary-light {
    background-color: $primary-light;
 }
 .line-bottom--white {
@@ -22,7 +22,7 @@
    color: $white;
 }
 .text-title-color {
-   color: $title;
+   color: $dark;
 }
 .text-primary {
    color: $primary;
@@ -38,6 +38,9 @@
 .btn--conversion {
    padding: 40px 32px;
    @include curtain;
+   @include ms {
+      padding: 40px 20px;
+   }
 }
 .btn--underline:hover {
    text-decoration: underline;
