@@ -35,13 +35,7 @@
 }
 
 //btn
-.btn--conversion {
-   padding: 40px 32px;
-   @include curtain;
-   @include ms {
-      padding: 40px 20px;
-   }
-}
+
 .btn--underline:hover {
    text-decoration: underline;
 }
@@ -52,3 +46,4 @@
 .cite--jump {
    @include jump;
 }
+

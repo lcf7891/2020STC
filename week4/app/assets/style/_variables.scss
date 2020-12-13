@@ -76,6 +76,10 @@ h1, h2, h3, h4, h5, h6 {
   } 
 }
 
+.h9 {
+  font-size: 42px;
+}
+
 .h3 {
   font-size: 36px;
   &-ls {
@@ -87,21 +91,46 @@ h1, h2, h3, h4, h5, h6 {
 
 .h4 {
   font-size: 32px;
+  &-ls {
+    @include ls {
+      font-size: 32px;
+    }
+  }
   &-ms {
     @include ms {
       font-size: 32px;
     }
-  } 
+  }
+  &-ss {
+    @include ss {
+      font-size: 32px;
+    }
+  }
 }
 
 .h5 {
-  font-size: 24px; 
+  font-size: 24px;
+  &-ls {
+    @include ls {
+      font-size: 24px;
+    }
+  }
+  &-ss {
+    @include ss {
+      font-size: 24px;
+    }
+  }
 }
 
 .h6 {
   font-size: 20px; 
   &-ms {
     @include ms {
+      font-size: 20px;
+    }
+  }
+  &-ss {
+    @include ss {
       font-size: 20px;
     }
   }
@@ -116,11 +145,20 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@include ms {
-  .h8-ms {
-    font-size: 16px;
+.h8 {
+  @include ms {
+    &-ms {
+      font-size: 16px;
+    }
+  }
+  @include ss {
+    &-ss {
+      font-size: 16px;
+    }
   }
 }
+
+
 
 //color
 $white: #ffffff;
@@ -130,4 +168,7 @@ $dark: #650300;
 $info: #707070;
 $border: #DEE2E6;
 $text-color: #212529;
+$g-dark: #5F3E2D;
+$g-light: #B75929;
+$page-number: #555555;
 

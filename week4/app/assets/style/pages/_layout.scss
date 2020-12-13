@@ -3,6 +3,30 @@
    height: 49px;
    background: url(../images/logo.png) center no-repeat;
    @include hide;
+   @include ss {
+      display: inline-block;
+      width: 48px;
+      height: 30px;
+      background-size: cover;
+      margin: 10px auto;
+   }
+}
+
+.btn__link--conversion {
+   padding: 40px 32px;
+   @include curtain;
+   @include ms {
+      padding: 40px 20px;
+   }
+   @include ss {
+      padding: 8px 20px;
+   }
+}
+.btn__item--conversion {
+   @include ss {
+      width: 50%;
+      border: 1px solid $white;
+   }
 }
 
 .figure-icon {
@@ -17,5 +41,60 @@
    @include ss {
       width: 20px;
       height: 20px;
+   }
+}
+
+.footer-navbar {
+   padding-top: 36px;
+   padding-bottom: 29px;
+   @include ls {
+      padding-top: 40px;
+      padding-bottom: 40px;
+   } 
+   @include ms {
+      padding-top: 24px;
+      padding-bottom: 22px;
+   }
+}
+
+.footer-navbar__sidebar {
+   @include ss {
+      ul:nth-child(1){
+         display: none;
+      }
+   }
+}
+.copyright-ss {
+   @include ss {
+      position: relative;
+   }
+}
+
+.footer-logo {
+   @include ms {
+      display: none;
+   }
+   @include ss {
+      width: 46px;
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+   }
+}
+
+.icon--width {
+   @include ms {
+      &-ms-6 {
+         width: 24px;
+      }
+      &-ms-8 {
+         width: 32px;
+      }
+   }
+   @include ss {
+      &-ss-5 {
+         width: 20px;
+      }
    }
 }

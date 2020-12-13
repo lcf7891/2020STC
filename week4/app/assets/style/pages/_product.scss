@@ -1,0 +1,133 @@
+.active::before {
+   content: '';
+   width: 100%;
+   height: 16px;
+   position: absolute;
+   background-color: $primary;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   @include ls {
+      height: 8px;
+   }
+   @include ss {
+      height: 4px;
+   }
+}
+
+.product {      
+   &__item {
+      width: 462px;
+      border: 1px solid #dcdcdc;
+      position: relative;
+      @include ls {
+         width: 256px;
+      }
+   }
+   &__link {
+      font-size: 42px;
+      color: #000000;
+      padding: 24px 0;
+      @include ls {
+         font-size: 28px;
+         padding: 16px 0;
+         img {
+            width: 32px;
+            height: 32px;
+            vertical-align: -15%;
+         }
+      }
+      @include ss {
+         font-size: 14px;
+         padding: 8px 0;
+         img {
+            width: 15px;
+            height: 15px;
+         }
+      }
+      &:hover::after {
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 16px;
+         background-color: $primary;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         @include ls {
+            height: 8px;
+         }
+         @include ss {
+            height: 4px;
+         }
+      }
+   }
+   &__img {
+      @include width-calc(2, 15);
+      @include ls {
+         @include width-calc(2, 0);
+      }
+   }
+   &-list {
+      @include width-calc(4, 15);
+      @include ls {
+         @include width-calc(3, 15);
+      }
+      @include ms {
+         @include width-calc(2, 15);
+      }
+      @include ss {
+         @include width-calc(1, 0);
+      }
+      &__sun {
+         @include width-calc(3, 15);
+         &-img {
+            width: 100%;
+            height: 224px;
+            object-fit: cover;
+            object-position: 50% 50%;
+         }
+         @include ls {
+            @include width-calc(2, 15);
+         }
+         @include ss {
+            @include width-calc(1, 0);
+         }
+      }
+      &__img {
+         width: 100%;
+         height: 164px;
+         object-fit: cover;
+         object-position: 50% 50%;
+      }
+   }
+   &-color {
+      &__box {
+         width: 24px;
+         height: 24px;
+         border-radius: 4px;
+      }
+      &--dark {
+         background-color: $g-dark;
+      } 
+      &--light {
+         background-color: $g-light;
+      }
+   }
+   &__page {
+      
+      &-num {
+         color: $page-number;
+         padding: 10px 12px;
+         border: 1px solid $page-number;
+         &:hover {
+            background-color: #000000;
+            color: $white;
+         }
+      }
+   }
+   &--holder {
+      background-color: #000000;
+      color: $white;
+   }
+}

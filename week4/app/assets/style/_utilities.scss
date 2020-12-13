@@ -1,11 +1,3 @@
-.d-block {
-   display: block;
-}
-.d-none-ms {
-   @include ms {
-      display: none;
-   }
-}
 
 //flex-box
 .d-flex {
@@ -33,10 +25,25 @@
    flex-wrap: wrap;
 }
 
-@include ms {
-   .flex-direction-ms {
-      flex-direction: row;
+.d-block {
+   display: block;
+}
+.d-none {
+   display: none;
+   &-ms {
+      @include ms {
+         display: none;
+      }
    }
+   &-ss {
+      @include ss {
+         display: none;
+      }
+   }
+}
+
+@include ms {
+   
 }
 
 //margin
@@ -65,6 +72,15 @@
 .mb-15 {
    @include spacing(mb, 15);
 }
+.mb-22 {
+   @include spacing(mb, 22);
+}
+.mb-25 {
+   @include spacing(mb, 25);
+}
+.mb-39 {
+   @include spacing(mb, 39);
+}
 
 //margin-left
 .ml-2{
@@ -82,6 +98,9 @@
 .ml-8 {
    @include spacing(ml, 8);
 }
+.ml-9 {
+   @include spacing(ml, 9);
+}
 .ml-10 {
    @include spacing(ml, 10);
 }
@@ -90,6 +109,14 @@
 }
 .ml-15 {
    @include spacing(ml, 15);
+}
+
+//margin-right
+.mr-2 {
+   @include spacing(mr, 2);
+}
+.mr-12 {
+   @include spacing(mr, 12);
 }
 
 //padding
@@ -121,16 +148,34 @@
 .py-4 {
    @include spacing(py, 4);
 }
+.py-10 {
+   @include spacing(py, 10);
+}
+
 
 //RWD-space
 @include ls {
+   .d-flex-ls {
+      display: flex;
+   }
+   .direction-row-ls {
+      flex-direction: row;
+   }
+
    .mb-2-ls {
       @include spacing(mb, 2);
    }
    .mb-10-ls {
       @include spacing(mb, 10);
    }
+   .mb-18-ls {
+      @include spacing(mb, 18);
+   }
+   .mb-26-ls {
+      @include spacing(mb, 26);
+   }
 
+   
    .pt-10-ls {
       @include spacing(pt, 10);
    }
@@ -138,14 +183,26 @@
    .pb-10-ls {
       @include spacing(pb, 10);
    }
+
+   .py-8-ls {
+      @include spacing(py, 8);
+   }
 }
 
 @include ms {
+   .flex-direction-ms {
+      flex-direction: row;
+   }
+
+
    .mb-2-ms {
       @include spacing(mb, 2);
    }
    .mb-4-ms {
       @include spacing(mb, 4);
+   }
+   .mb-6-ms {
+      @include spacing(mb, 6);
    }
    .mb-7-ms {
       @include spacing(mb, 7);
@@ -166,9 +223,62 @@
    .ml-10-ms {
       @include spacing(ml, 10);
    }
+   
+   .mr-10-ms {
+      @include spacing(mr, 10);
+   }
+
+   .pt-10-ms {
+      @include spacing(pt, 10);
+   }
+   .pb-8-ms {
+      @include spacing(pb, 8);
+   }
 }
 
 @include ss {
+   .flex-direction-column-ss {
+      flex-direction: column;
+   }
+   .align-items-start-ss {
+      align-items: start;
+   }
 
+   .mt-5-ss {
+      @include spacing(mt, 5);
+   }
+
+   .mb-2-ss {
+      @include spacing(mb, 2);
+   }
+   .mb-4-ss {
+      @include spacing(mb, 4);
+   }
+   .mb-5-ss {
+      @include spacing(mb, 5);
+   }
+   .mb-8-ss {
+      @include spacing(mb, 8);
+   }
+   .mb-10-ss {
+      @include spacing(mb, 10);
+   }
+   .mb-14-ss {
+      @include spacing(mb, 14);
+   }
+
+   .ml-0-ss {
+      @include spacing(ml, 0);
+   }
+   .ml-1-ss {
+      @include spacing(ml, 1);
+   }
+
+   .pt-8-ss {
+      @include spacing(pt, 8);
+   }
+   .pb-6-ss {
+      @include spacing(pb, 6);
+   }
 }
 
