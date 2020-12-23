@@ -1,0 +1,33 @@
+// font
+.f-xl {
+   font-size: 24px;
+}
+.f-lg {
+   font-size: 20px;
+}
+.f-md {
+   font-size: 14px;
+}
+.f-sm {
+   font-size: 12px;
+}
+
+
+
+// color
+$custom-primary: #2A8356;
+$custom-secondary: #EDF4EE;
+$custom-other: #CDDDCD;
+$custom-font-primary: #121212;
+$custom-font-secondary: #707070;
+$custom-font-info: #0000009A;
+$custom-font-other: #00000062;
+
+
+// font-color
+.f-secondary-color {
+   color: $custom-font-secondary;
+}
+.f-info-color {
+   color: $custom-font-info;
+}

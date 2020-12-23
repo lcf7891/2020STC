@@ -1,0 +1,51 @@
+.bg-style {
+  background-color: $custom-secondary;
+}
+ 
+.sidebar {
+  &__menu {
+    height: 100vh;
+  }
+  &__link {
+    display: block;
+    position: relative;
+    text-align: left;
+    color: $custom-font-primary;
+    &:hover {
+      color: $custom-primary;
+      background-color: $custom-other;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 4px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $custom-primary;
+      }
+    }
+  }
+}
+ 
+.active {
+  position: relative;
+  color: $custom-primary;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $custom-primary;
+  }
+}
+
+ 
+.media-figure {
+  width: 40px;
+  height: 40px;
+}
+ 
