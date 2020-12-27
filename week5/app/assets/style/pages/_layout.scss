@@ -1,0 +1,36 @@
+.sidebar {
+   height: 100vh;
+   &-link {
+      position: relative;
+      &:hover {
+         color: $black;
+         background-color: $success;
+         &::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $primary;
+         }
+      }
+   }
+}
+.active {
+   position: relative;
+   color: $primary;
+   background-color: $success;
+   &::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $primary;
+   }
+}
+

@@ -1,3 +1,30 @@
+//font-face
+@font-face {
+   font-family: 'Lato-B';
+   src: url(/fonts/Lato-Bold.ttf) format('truetype');
+}
+@font-face {
+   font-family: 'Lato-R';
+   src: url(/fonts/Lato-Regular.ttf) format('truetype');
+}
+@font-face {
+   font-family: 'Mono-R';
+   src: url(/fonts/RobotoMono-Regular.ttf) format('truetype');
+}
+.lato-bold {
+   font-family: 'Lato-B', sans-serif;
+   font-weight: 700;
+}
+.lato-regular {
+   font-family: 'Lato-R', sans-serif;
+   font-weight: 400;
+}
+.mono-regular {
+   font-family: 'Mono-R', sans-serif;
+   font-weight: 400;
+}
+
+
 // font
 .f-xl {
    font-size: 24px;
@@ -10,24 +37,4 @@
 }
 .f-sm {
    font-size: 12px;
-}
-
-
-
-// color
-$custom-primary: #2A8356;
-$custom-secondary: #EDF4EE;
-$custom-other: #CDDDCD;
-$custom-font-primary: #121212;
-$custom-font-secondary: #707070;
-$custom-font-info: #0000009A;
-$custom-font-other: #00000062;
-
-
-// font-color
-.f-secondary-color {
-   color: $custom-font-secondary;
-}
-.f-info-color {
-   color: $custom-font-info;
 }
