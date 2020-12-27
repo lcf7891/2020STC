@@ -5399,9 +5399,9 @@ a.text-dark:hover, a.text-dark:focus {
      object-position: center; }
 
 .list-items-active {
-  background-color: #CDDDCD; }
+  background-color: #EDF4EE; }
 
-.list-items-actions:hover {
+.list-items-hover:hover {
   color: #121212;
   background-color: #CDDDCD; }
 
