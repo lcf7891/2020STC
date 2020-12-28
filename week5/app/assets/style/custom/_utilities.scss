@@ -7,9 +7,9 @@
 
 .list-items {
    &-active {
-      background-color: $success;
+      background-color: $secondary;
    }
-   &-actions:hover {
+   &-hover:hover {
       color: $black;
       background-color: $success;
    }

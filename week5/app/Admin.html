@@ -4,3 +4,139 @@ layout: ./app/layout.ejs
 engine: ejs
 current: Admin
 ---
+
+<div class="col-md-10 py-4 px-5">
+
+   <header class="d-flex align-items-center mb-5">
+      <h2 class="lato-bold f-xl mr-5 mb-0">Admin</h2>
+      <div class="dropdown mr-auto">
+         <button type="button" class="btn lato-bold text-black p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="material-icons align-middle text-primary mr-2">add</span><span class="align-middle">Add New Admin</span>
+         </button>
+         <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-dark" href="#">HTML</a></li>
+            <li><a class="dropdown-item text-dark" href="#">CSS</a></li>
+            <li><a class="dropdown-item text-dark" href="#">JavaScript</a></a></li>
+         </ul>
+       </div>
+      <a href="#" class="f-xl material-icons p-0 mr-3">search</a>
+      <a href="#" class="f-xl material-icons p-0">notifications_active</a>
+   </header>
+
+   <table class="table table-borderless table-hover text-black">
+      <thead class="lato-bold border-black border-bottom">
+         <tr>
+            <th scope="col">ID<span class="f-lg text-primary material-icons align-middle ml-2">arrow_downward</span></th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Verified</th>
+            <th scope="col"></th>
+         </tr>
+      </thead>
+      <tbody class="lato-regular">
+         <tr class="border-success border-bottom">
+            <th>#1</th>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+               <a href="#" class="f-xl material-icons align-middle p-0 mr-3" data-toggle="modal" data-target="#exampleModalCenter">visibility</a>
+               <a href="#" class="f-xl material-icons align-middle p-0" data-toggle="modal" data-target="#exampleModalCenter">edit</a>
+            </td>
+         </tr>
+         <tr class="border-success border-bottom">
+            <th>#2</th>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+               <a href="#" class="f-xl material-icons align-middle p-0 mr-3" data-toggle="modal" data-target="#exampleModalCenter">visibility</a>
+               <a href="#" class="f-xl material-icons align-middle p-0" data-toggle="modal" data-target="#exampleModalCenter">edit</a>
+            </td>
+         </tr>
+         <tr class="border-success border-bottom">
+            <th>#3</th>
+            <td>Mahima Lopez</td>
+            <td>Mahima.Lopez@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+               <a href="#" class="f-xl material-icons align-middle p-0 mr-3" data-toggle="modal" data-target="#exampleModalCenter">visibility</a>
+               <a href="#" class="f-xl material-icons align-middle p-0" data-toggle="modal" data-target="#exampleModalCenter">edit</a>
+            </td>
+         </tr>
+         <tr class="border-success border-bottom">
+            <th>#4</th>
+            <td>Pharrell Murray</td>
+            <td>Pharrell.Murray@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+               <a href="#" class="f-xl material-icons align-middle p-0 mr-3" data-toggle="modal" data-target="#exampleModalCenter">visibility</a>
+               <a href="#" class="f-xl material-icons align-middle p-0" data-toggle="modal" data-target="#exampleModalCenter">edit</a>
+            </td>
+         </tr>
+         <tr class="border-success border-bottom">
+            <th>#5</th>
+            <td>Annika Mcbride</td>
+            <td>Annika.Mcbride@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+               <a href="#" class="f-xl material-icons align-middle p-0 mr-3" data-toggle="modal" data-target="#exampleModalCenter">visibility</a>
+               <a href="#" class="f-xl material-icons align-middle p-0" data-toggle="modal" data-target="#exampleModalCenter">edit</a>
+            </td>
+         </tr>
+         <tr class="border-success border-bottom">
+            <th>#6</th>
+            <td>Fatimah Clark</td>
+            <td>Fatimah.Clark@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+               <a href="#" class="f-xl material-icons align-middle p-0 mr-3" data-toggle="modal" data-target="#exampleModalCenter">visibility</a>
+               <a href="#" class="f-xl material-icons align-middle p-0" data-toggle="modal" data-target="#exampleModalCenter">edit</a>
+            </td>
+         </tr>
+         <tr class="border-success border-bottom">
+            <th>#7</th>
+            <td>Klaudia Rhodes</td>
+            <td>Klaudia.Rhodes@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+               <a href="#" class="f-xl material-icons align-middle p-0 mr-3" data-toggle="modal" data-target="#exampleModalCenter">visibility</a>
+               <a href="#" class="f-xl material-icons align-middle p-0" data-toggle="modal" data-target="#exampleModalCenter">edit</a>
+            </td>
+         </tr>
+         <tr class="border-success border-bottom">
+            <th>#8</th>
+            <td>Tillie Lucero</td>
+            <td>Tillie.Lucero@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+               <a href="#" class="f-xl material-icons align-middle p-0 mr-3" data-toggle="modal" data-target="#exampleModalCenter">visibility</a>
+               <a href="#" class="f-xl material-icons align-middle p-0" data-toggle="modal" data-target="#exampleModalCenter">edit</a>
+            </td>
+         </tr>
+         <tr class="border-success border-bottom">
+            <th>#9</th>
+            <td>Sabrina Stephenson</td>
+            <td>Sabrina.Stephenson@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+               <a href="#" class="f-xl material-icons align-middle p-0 mr-3" data-toggle="modal" data-target="#exampleModalCenter">visibility</a>
+               <a href="#" class="f-xl material-icons align-middle p-0" data-toggle="modal" data-target="#exampleModalCenter">edit</a>
+            </td>
+         </tr>
+         <tr class="border-success border-bottom">
+            <th>#10</th>
+            <td>Annie Smith</td>
+            <td>Annie.Smith@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+               <a href="#" class="f-xl material-icons align-middle p-0 mr-3" data-toggle="modal" data-target="#exampleModalCenter">visibility</a>
+               <a href="#" class="f-xl material-icons align-middle p-0" data-toggle="modal" data-target="#exampleModalCenter">edit</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   
+   
+
+</div>
