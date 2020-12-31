@@ -187,6 +187,8 @@ a {
   color: $black; // $link-color
   text-decoration: $link-decoration;
   background-color: transparent; // Remove the gray background on active links in IE 10.
+  display: block;
+  padding: 4px;
 
   @include hover() {
     color: $primary;  //$link-hover-color

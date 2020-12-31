@@ -19,9 +19,11 @@ current: index
             <li><a class="dropdown-item text-dark" href="#">CSS</a></li>
             <li><a class="dropdown-item text-dark" href="#">JavaScript</a></a></li>
          </ul>
-       </div>
-      <a href="#" class="f-xl material-icons p-0 mr-3">search</a>
-      <a href="#" class="f-xl material-icons p-0">notifications_active</a>
+      </div>
+      <ul class="list-unstyled d-flex align-items-center m-0">
+         <li><a href="#" class="f-xl material-icons align-middle p-0 mr-3">search</a></li>
+         <li><a href="#" class="f-xl material-icons align-middle p-0">notifications_active</a></li>
+      </ul>
    </header>
 
    <article class="d-flex align-items-center">
@@ -46,9 +48,9 @@ current: index
                   <p class="d-flex justify-content-between mb-2">
                      <span>Chapter Assignment 2</span><span>4 hrs ago</span>
                   </p>
-                  <p class="d-flex justify-content-between">
-                     <span class="lato-bold h6">Please check this file…</span><span class="text-dark">Emily Wang</span>
-                  </p>
+                  <div class="d-flex justify-content-between">
+                     <h3 class="lato-bold h6 mb-0">Please check this file…</h3><span class="text-dark">Emily Wang</span>
+                  </div>
                </a>
             </li>
             <li>
@@ -56,9 +58,9 @@ current: index
                   <p class="d-flex justify-content-between mb-2">
                      <span>Chapter Assignment 1</span><span>12 hrs ago</span>
                   </p>
-                  <p class="d-flex justify-content-between">
-                     <span class="lato-bold h6">My Homework</span><span class="text-dark">David Xu</span>
-                  </p>
+                  <div class="d-flex justify-content-between">
+                     <h3 class="lato-bold h6 mb-0">My Homework</h3><span class="text-dark">David Xu</span>
+                  </div>
                </a>
             </li>
             <li>
@@ -66,9 +68,9 @@ current: index
                   <p class="d-flex justify-content-between mb-2">
                      <span>Final Assignment</span><span>18 hrs ago</span>
                   </p>
-                  <p class="d-flex justify-content-between">
-                     <span class="lato-bold h6">Have a problem with this…</span><span class="text-dark">Tony Wei</span>
-                  </p>
+                  <div class="d-flex justify-content-between">
+                     <h3 class="lato-bold h6 mb-0">Have a problem with this…</h3><span class="text-dark">Tony Wei</span>
+                  </div>
                </a>
             </li>
             <li>
@@ -76,9 +78,9 @@ current: index
                   <p class="d-flex justify-content-between mb-2">
                      <span>Final Assignment</span><span>19 hrs ago</span>
                   </p>
-                  <p class="d-flex justify-content-between">
-                     <span class="lato-bold h6">Did I do it right?</span><span class="text-dark">Christina Lin</span>
-                  </p>
+                  <div class="d-flex justify-content-between">
+                     <h3 class="lato-bold h6 mb-0">Did I do it right?</h3><span class="text-dark">Christina Lin</span>
+                  </div>
                </a>
             </li>
          </ul>
@@ -89,10 +91,10 @@ current: index
          <div class="card border border-success mb-4">
 
             <header class="card-header bg-secondary d-flex justify-content-between align-items-center">
-               <p class="text-black d-flex flex-column">
-                  <span class="lato-regular f-sm mb-1">Chapter Assignment 2 / HTML&CSS</span>
-                  <span class="lato-bold">Please check this file for me, thanks!</span>
-               </p>
+               <div class="text-black mb-0">
+                  <h3 class="lato-regular f-sm mb-3">Chapter Assignment 2 / HTML&CSS</h3>
+                  <h4 class="lato-bold f-lg mb-0">Please check this file for me, thanks!</h4>
+               </div>
                <a href="#" class="material-icons">more_vert</a>
             </header>
 
@@ -101,7 +103,7 @@ current: index
                <article class="media">
                   <img class="media-figure rounded-circle" src="./assets/images/emilywang.jpeg" alt="photo-emilyWang">
                   <section class="media-body lato-regular text-black border-bottom ml-2 mb-4 pb-3  pr-5">
-                     <p class="lato-bold mb-0">Emily Wang</p>
+                     <h3 class="h6 lato-bold mb-1">Emily Wang</h3>
                      <p class="text-dark f-sm mb-3">10:38 AM (4 hours ago)</p>
                      <p class="f-md text-justify mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="mono-regular bg-secondary text-primary p-1">div</code> is bigger than the height of the <code class="mono-regular bg-secondary text-primary p-1">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br> What is the gap or extra space below image?</p>
                      <a href="#" class="lato-bold btn btn-secondary border border-success">
@@ -115,14 +117,14 @@ current: index
                   <img class="media-figure rounded-circle" src="./assets/images/andychen.jpeg" alt="photo-andyChen">
                   <section class="media-body lato-regular text-black ml-2">
                      <header class="d-flex justify-content-between mb-3">
-                        <p>
-                           <span class="d-block lato-bold mb-0">Andy Chen (You)</span>
+                        <div>
+                           <h3 class="h6 lato-bold mb-0">Andy Chen (You)</h3>
                            <span class="text-dark f-sm">13:24 AM (1 hours ago)</span>
-                        </p>
-                        <div class="d-flex">
-                           <a href="#" class="f-xl material-icons align-middle mr-3">star_border</a>
-                           <a href="#" class="f-xl material-icons align-middle">edit</a>
                         </div>
+                        <ul class="list-unstyled d-flex">
+                           <li><a href="#" class="f-xl material-icons align-middle mr-3">star_border</a></li>
+                           <li><a href="#" class="f-xl material-icons align-middle">edit</a></li>
+                        </ul>
                      </header>
                      
                      <article class="f-md text-justify mb-3 pr-5">
@@ -172,25 +174,23 @@ current: index
                <div class="card-body">
                   <textarea class="reply-area border-0 w-100" name="text" id="ReplyAnAnswer" cols="30" rows="10" placeholder="Reply an answer…"></textarea>
                </div>
-               <div class="card-footer lato-bold bg-white border-0 ml-auto">
-                  <button type="button" class="btn btn-outline-primary mr-3 px-4" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">Cancel</button>
-                  <button type="button" class="btn btn-primary px-4">Reply</button>
-               </div>
+               <ul class="list-unstyled d-flex card-footer lato-bold bg-white border-0 ml-auto">
+                  <li class="btn btn-outline-primary mr-3 px-4" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">Cancel</li>
+                  <li class="btn btn-primary px-4">Reply</li>
+               </ul>
             </div>
          </div>
-
          <div class="btn-toolbar d-flex justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
 
-            <div class="btn-group" role="group" aria-label="First group">
-              <button type="button" class="btn"><span class="material-icons align-middle">keyboard_arrow_left</span></button>
-              <button type="button" class="btn"><span class="material-icons align-middle">keyboard_arrow_right</span></button>
-            </div>
+            <ul class="list-unstyled d-flex btn-group" role="group" aria-label="First group">
+              <li class="btn"><span class="material-icons align-middle">keyboard_arrow_left</span></li>
+              <li class="btn"><span class="material-icons align-middle">keyboard_arrow_right</span></li>
+            </ul>
 
-            <div class="btn-group lato-bold p-1" role="group" aria-label="Second group">
-              <button type="button" class="btn btn-outline-primary mr-3 px-4">Mark as read</button>
-              <button type="button" class="btn btn-primary px-4" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Reply</button>
-            </div>
-
+            <ul class="list-unstyled d-flex btn-group lato-bold p-1" role="group" aria-label="Second group">
+              <li class="btn btn-outline-primary mr-3 px-4">Mark as read</li>
+              <li class="btn btn-primary px-4" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Reply</li>
+            </ul>
          </div>
 
       </article>

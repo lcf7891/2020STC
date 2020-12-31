@@ -22,6 +22,11 @@
   left: 0;
   z-index: $zindex-fixed;
 }
+.fixed-right {
+  position: fixed;
+  left: 0;
+  z-index: $zindex-fixed;
+}
 
 .sticky-top {
   @supports (position: sticky) {
