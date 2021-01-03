@@ -1,0 +1,81 @@
+// font-face
+@font-face {
+   font-family: 'SF-B';
+   src: url(/fonts/SF-Pro-Text-Bold.otf) format('opentype');
+}
+@font-face {
+   font-family: 'SF-R';
+   src: url(/fonts/SF-Pro-Text-Regular.otf) format('opentype');
+}
+@font-face {
+   font-family: 'SF-L';
+   src: url(/fonts/SF-Pro-Text-Light.otf) format('opentype');
+}
+@font-face {
+   font-family: 'SF-M';
+   src: url(/fonts/SF-Pro-Text-Medium.otf) format('opentype');
+}
+@font-face {
+   font-family: 'SF-S';
+   src: url(/fonts/SF-Pro-Text-Semibold.otf) format('opentype');
+}
+@font-face {
+   font-family: 'NS-L';
+   src: url(/fonts/NotoSansTC-Light.otf) format('opentype');
+}
+@font-face {
+   font-family: 'NS-M';
+   src: url(/fonts/NotoSansTC-Medium.otf) format('opentype')
+}
+@font-face {
+   font-family: 'NS-R';
+   src: url(/fonts/NotoSansTC-Regular.otf) format('opentype');
+}
+
+// font-family
+.f1 {
+   font-family: '蘋方-繁', 'NS-L', sans-serif;
+   font-weight: 300;
+}
+.f2 {
+   font-family: '蘋方-繁', 'NS-R', sans-serif;
+   font-weight: 400;
+}
+.f3 {
+   font-family: '蘋方-繁', 'NS-M', sans-serif;
+   font-weight: 600;
+}
+.f4 {
+   font-family: 'SF-L', sans-serif;
+   font-weight: 300;
+}
+.f5 {
+   font-family: 'SF-R', sans-serif;
+   font-weight: 400;
+}
+.f6 { 
+   font-family: 'SF-M', sans-serif;
+   font-weight: 500;
+}
+.f7 {
+   font-family: 'SF-S', sans-serif;
+   font-weight: 600;
+}
+.f8 {
+   font-family: 'SF-B', sans-serif;
+   font-weight: 700;
+}
+
+// font-size
+.h7 {
+   font-size: 14px;
+}
+
+@media (max-width: 576px) {
+   .h2-sm {
+      font-size: 32px;
+   }
+   .h5-sm {
+      font-size: 20px;
+   }
+}

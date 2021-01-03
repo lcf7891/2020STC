@@ -1,0 +1,26 @@
+.custom-border {
+   border: 2px solid;
+}
+
+.custom-line-height {
+   line-height: 1.5;
+}
+
+.custom-active {
+   text-decoration: underline;
+   &:hover {
+      text-decoration: underline;
+   }
+}
+
+
+.custom-card-img {
+   width: 255px;
+   height: 255px;
+   object-fit: cover;
+   @media (max-width: 576px) {
+      width: 165px;
+      height: 165px;
+      object-fit: cover;
+   }
+}
